@@ -18,3 +18,9 @@
 
 <hr>
 
+### CREO un array di oggetti 
+- Composto da nome, ruolo e img (stringa)
+### STAMPO IN CONSOLE le info
+- Servendomi di un CICLO FOR
+### STAMPO NEL DOM le info
+- Servendomi di un CICLO FOR
