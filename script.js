@@ -62,7 +62,7 @@ const employees = [
     roleElement.textContent = "Ruolo: " + employees[i].role;
   
     const imageElement = document.createElement("img");
-    imageElement.src = "../img/" + employees[i].image;
+    imageElement.src = employees[i].image;
     imageElement.alt = employees[i].name;
   
     employeeDiv.appendChild(nameElement);
