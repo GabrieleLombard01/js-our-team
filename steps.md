@@ -24,3 +24,6 @@
 - Servendomi di un CICLO FOR
 ### STAMPO NEL DOM le info
 - Servendomi di un CICLO FOR
+### TRASFORMO la stringa image in un'immagine effettiva
+- Servendomi di createElement
+### MODIFICO l'html e il css

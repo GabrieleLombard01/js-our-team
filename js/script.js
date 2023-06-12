@@ -11,6 +11,7 @@ Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 */
 
+//! OPERAZIONI INIZIALI:
 // CREO un array di oggetti
 const employees = [
     {
@@ -46,3 +47,27 @@ const employees = [
   ];
   
   const container = document.getElementById("employee-container");
+
+  //! LOGICA:
+  
+  // Creazione di elementi HTML per ogni dipendente e aggiunta al container
+  for (let i = 0; i < employees.length; i++) {
+    const employeeDiv = document.createElement("div");
+    employeeDiv.className = "card";
+  
+    const nameElement = document.createElement("p");
+    nameElement.textContent = "Nome: " + employees[i].name;
+  
+    const roleElement = document.createElement("p");
+    roleElement.textContent = "Ruolo: " + employees[i].role;
+  
+    const imageElement = document.createElement("img");
+    imageElement.src = "../img/" + employees[i].image;
+    imageElement.alt = employees[i].name;
+  
+    employeeDiv.appendChild(nameElement);
+    employeeDiv.appendChild(roleElement);
+    employeeDiv.appendChild(imageElement);
+    container.appendChild(employeeDiv);
+  }
+  
